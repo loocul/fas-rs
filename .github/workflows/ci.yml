@@ -31,8 +31,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup ndk
         run: |
-          ndk_url=$(https://googledownloads.cn/android/repository/android-ndk-r29-beta2-linux.zip)
-          wget -O ndk.zip $ndk_url -nv
+          wget -O ndk.zip https://googledownloads.cn/android/repository/android-ndk-r29-beta2-linux.zip -nv
           mkdir -p ~/ndk_temp
           unzip ndk.zip -d ~/ndk_temp 2>&1 > /dev/null
           mv ~/ndk_temp/*/* ~/ndk_temp
@@ -78,8 +77,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup ndk
         run: |
-          ndk_url=$(wget -qO- https://github.com/android/ndk/releases/latest | grep -e 'https://dl.google.com/android/repository/android-ndk-.*-linux.zip' | sed -n 's/.*<a href="\([^"]*\)".*/\1/p')
-          wget -O ndk.zip $ndk_url -nv
+          wget -O ndk.zip https://googledownloads.cn/android/repository/android-ndk-r29-beta2-linux.zip -nv
           mkdir ~/ndk_temp
           unzip ndk.zip -d ~/ndk_temp 2>&1 > /dev/null
           mv ~/ndk_temp/*/* ~/ndk_temp
