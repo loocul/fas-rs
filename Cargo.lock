@@ -2150,9 +2150,9 @@ dependencies = [
 
 [[package]]
 name = "stringzilla"
-version = "3.12.4"
+version = "3.12.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79beb4f1dc2ca724bc0ec6ce14f31e449fda0e8656b717ad0368033d95c06467"
+checksum = "4f562e07d42f213af747a28b1845d155c651c1c1b4072192b030239965de9a3f"
 dependencies = [
  "cc",
 ]
