@@ -217,7 +217,7 @@ checksum = "c51b96c5a8ed8705b40d655273bc4212cbbf38d4e3be2788f36306f154523ec7"
 dependencies = [
  "bytes",
  "core-error",
- "hashbrown",
+ "hashbrown 0.15.5",
  "log",
  "object",
  "thiserror 1.0.69",
@@ -710,7 +710,7 @@ dependencies = [
  "flexi_logger",
  "flume",
  "frame-analyzer",
- "hashbrown",
+ "hashbrown 0.16.0",
  "inotify",
  "libc",
  "likely_stable",
@@ -801,6 +801,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d9c4f5dac5e15c24eb999c26181a6ca40b39fe946cbe4c263c7209467bc83af2"
 
 [[package]]
+name = "foldhash"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77ce24cb58228fbb8aa041425bb1050850ac19177686ea6e0f41a70416f56fdb"
+
+[[package]]
 name = "frame-analyzer"
 version = "0.3.3"
 source = "git+https://github.com/reigadegr/frame-analyzer-ebpf#578a8e4bf75a8591611d7330a8c0d031bdfaac09"
@@ -810,7 +816,7 @@ dependencies = [
  "ctor",
  "ctrlc",
  "frame-analyzer-ebpf-common",
- "hashbrown",
+ "hashbrown 0.15.5",
  "libc",
  "mio",
  "thiserror 2.0.12",
@@ -978,13 +984,24 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
-version = "0.15.2"
+version = "0.15.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf151400ff0baff5465007dd2f3e717f3fe502074ca563069ce3a6629d07b289"
+checksum = "9229cfe53dfd69f0609a49f65461bd93001ea1ef889cd5529dd176593f5338a1"
 dependencies = [
  "allocator-api2",
  "equivalent",
- "foldhash",
+ "foldhash 0.1.5",
+]
+
+[[package]]
+name = "hashbrown"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5419bdc4f6a9207fbeba6d11b604d481addf78ecd10c11ad51e76c2f6482748d"
+dependencies = [
+ "allocator-api2",
+ "equivalent",
+ "foldhash 0.2.0",
 ]
 
 [[package]]
@@ -1117,7 +1134,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cea70ddb795996207ad57735b50c5982d8844f38ba9ee5f1aedcfb708a2aa11e"
 dependencies = [
  "equivalent",
- "hashbrown",
+ "hashbrown 0.15.5",
  "serde",
 ]
 
@@ -1550,7 +1567,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62948e14d923ea95ea2c7c86c71013138b66525b86bdc08d2dcc262bdb497b87"
 dependencies = [
  "crc32fast",
- "hashbrown",
+ "hashbrown 0.15.5",
  "indexmap",
  "memchr",
 ]
