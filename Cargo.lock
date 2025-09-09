@@ -350,10 +350,11 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.2.19"
+version = "1.2.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8e3a13707ac958681c13b39b458c073d0d9bc8a22cb1b2f4c8e55eb72c13f362"
+checksum = "5252b3d2648e5eedbc1a6f501e3c795e07025c1e93bbf8bbdd6eef7f447a6d54"
 dependencies = [
+ "find-msvc-tools",
  "jobserver",
  "libc",
  "shlex",
@@ -751,6 +752,12 @@ dependencies = [
  "uncased",
  "version_check",
 ]
+
+[[package]]
+name = "find-msvc-tools"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7fd99930f64d146689264c637b5af2f0233a933bef0d8570e2526bf9e083192d"
 
 [[package]]
 name = "flate2"
@@ -2150,9 +2157,9 @@ dependencies = [
 
 [[package]]
 name = "stringzilla"
-version = "3.12.4"
+version = "4.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79beb4f1dc2ca724bc0ec6ce14f31e449fda0e8656b717ad0368033d95c06467"
+checksum = "630585804ba2412efd4da4f346f37bd1f466d58d07f9a94ea2787fc010b320fe"
 dependencies = [
  "cc",
 ]
